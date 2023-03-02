@@ -1,3 +1,9 @@
+import './NavBar.css';
+
+const toogleNav = () => {
+   let navbar = document.getElementById("dropdownNavbar");
+   navbar?.classList.toggle("hidden");
+}
 
 export const NavBar = () => {
    return (
@@ -11,8 +17,20 @@ export const NavBar = () => {
                <li>
                   <a href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">¿Quienes Somos?</a>
                </li>
-               <li>
-                  <a href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sesiones</a>
+               <li onMouseEnter={toogleNav} onMouseLeave={toogleNav}>
+                  <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Sesiones
+                     <svg className="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd">
+                        </path>
+                     </svg>
+                  </button>
+                  <div id="dropdownNavbar" className="hidden">
+                     <ul className="w-full bg-blue-700 flex flex-col">
+                        <li className='ml-2 rounded-ful'>
+                           <a href="https://www.facebook.com/i.c.aduanal" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" target='_blank'>Facebook</a>
+                        </li>
+                     </ul>
+                  </div>
                </li>
                <li>
                   <a href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Servicios</a>
@@ -23,5 +41,39 @@ export const NavBar = () => {
             </ul>
          </div>
       </nav>
+      // <nav>
+      //    <div>
+      //       <span className="font-semibold text-4xl text-green-400">Tutorend</span>
+      //    </div>
+
+      //    <div className="block lg:hidden">
+      //       <button
+      //          onClick={toogleNav}
+      //          className="flex flex-col px-3 py-2 border rounded border-gray-800 hover:text-white hover:border-white"
+      //       >
+      //          <div className="w-6 h-1 bg-white"></div>
+      //          <div className="w-6 h-1 bg-white my-1"></div>
+      //          <div className="w-6 h-1 bg-white"></div>
+      //       </button>
+      //    </div>
+      //    <div className="w-full lg:w-auto lg:items-center lg:inline-block  hidden" id="navbar">
+      //       <div className="lg:flex-grow text-2xl text-center space-x-3">
+      //          <a href="#" className="block lg:inline-block hover:text-green-400 mt-4">
+      //             Home
+      //          </a>
+      //          <a href="#" className="block lg:inline-block hover:text-green-400 mt-4">
+      //             Blog
+      //          </a>
+      //          <a href="#" className="block lg:inline-block hover:text-green-400 mt-4 mb-3z">
+      //             About Us
+      //          </a>
+      //          <a href="#" className="lg:inline-block hover:text-green-400 mt-6 border rounded border-white hover:border-transparent hover:bg-white px-4">
+      //             Login / Sign Up
+      //          </a>
+      //       </div>
+      //    </div>
+      // </nav >
+
+
    )
 }
