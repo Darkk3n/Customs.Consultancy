@@ -39,39 +39,5 @@ export const NavBar = () => {
             </ul>
          </div>
       </nav>
-      // <nav>
-      //    <div>
-      //       <span className="font-semibold text-4xl text-green-400">Tutorend</span>
-      //    </div>
-
-      //    <div className="block lg:hidden">
-      //       <button
-      //          onClick={toogleNav}
-      //          className="flex flex-col px-3 py-2 border rounded border-gray-800 hover:text-white hover:border-white"
-      //       >
-      //          <div className="w-6 h-1 bg-white"></div>
-      //          <div className="w-6 h-1 bg-white my-1"></div>
-      //          <div className="w-6 h-1 bg-white"></div>
-      //       </button>
-      //    </div>
-      //    <div className="w-full lg:w-auto lg:items-center lg:inline-block  hidden" id="navbar">
-      //       <div className="lg:flex-grow text-2xl text-center space-x-3">
-      //          <a href="#" className="block lg:inline-block hover:text-green-400 mt-4">
-      //             Home
-      //          </a>
-      //          <a href="#" className="block lg:inline-block hover:text-green-400 mt-4">
-      //             Blog
-      //          </a>
-      //          <a href="#" className="block lg:inline-block hover:text-green-400 mt-4 mb-3z">
-      //             About Us
-      //          </a>
-      //          <a href="#" className="lg:inline-block hover:text-green-400 mt-6 border rounded border-white hover:border-transparent hover:bg-white px-4">
-      //             Login / Sign Up
-      //          </a>
-      //       </div>
-      //    </div>
-      // </nav >
-
-
    )
 }
