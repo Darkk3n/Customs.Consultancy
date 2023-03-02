@@ -1,5 +1,3 @@
-import './NavBar.css';
-
 const toogleNav = () => {
    let navbar = document.getElementById("dropdownNavbar");
    navbar?.classList.toggle("hidden");
