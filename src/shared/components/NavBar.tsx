@@ -5,7 +5,7 @@ const toogleNav = () => {
 
 export const NavBar = () => {
    return (
-      <nav className="border-gray-200 px-2 rounded">
+      <nav className="border-gray-200 rounded mb-3">
          <div className="flex flex-wrap items-center justify-center mx-auto">
             <img className='h-30 w-40 rounded-full' src='/logo.png' />
             <ul className="flex flex-col p-4 mt-4 ml-2 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
